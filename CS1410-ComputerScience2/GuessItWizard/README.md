@@ -1,0 +1,1 @@
+This program is a simple variation on the standard "20 Questions" game. It attempts to guess what is on the user's mind by asking various types of questions that it has "learned" from previous rounds of play. It utilizes a binary search tree to store and read questions and answers. 
