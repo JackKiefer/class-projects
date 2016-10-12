@@ -167,6 +167,9 @@ public:
 		return nodeValue;
 	}
 
+	/* Returns the element at the root of the tree */
+	Comparable getRoot() { return root->element; }
+
 private:
 	struct AvlNode
 	{
@@ -254,15 +257,18 @@ private:
 
 	AvlNode*  removeMin(AvlNode * & t)
 	{
+		AvlNode* oldNode;
 		if (!t) return nullptr;
 		if (!t->left) 
 		{
-			AvlNode* oldNode = t;
+			oldNode = t;
 			t = t->right;
-			balance(t);
 			return oldNode;
 		}
-		return removeMin(t->left);
+		
+		auto minNode = removeMin(t->left);
+		balance(t);
+		return minNode; 
 	}
 	static const int ALLOWED_IMBALANCE = 1;
 
