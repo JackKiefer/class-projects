@@ -1,0 +1,1 @@
+This program utilizes an input file to read in nodes that are stored as several multi-way trees for usage in a WordLadders-style "game." It supports the copying of trees, the counting of fringe nodes, find and delete, the finding of common ancestors between two nodes, and determining if two given trees are isomorphic.

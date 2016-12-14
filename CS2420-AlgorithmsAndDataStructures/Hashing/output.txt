@@ -1,0 +1,99 @@
+Enter the game number to play (between 0 and 4): 
+-- game0.txt opened --
+
+Enter output frequency (number of words between each printing of the score): 
+
+5 words played, total score: 1099
+10 words played, total score: 2054
+15 words played, total score: 2504
+Final score: 2504
+2 words of length 3
+4 words of length 4
+4 words of length 5
+2 words of length 6
+2 words of length 8
+1 words of length 9
+
+Enter the game number to play (between 0 and 4):
+-- game1.txt opened --
+
+Enter output frequency (number of words between each printing of the score): 
+
+20 words played, total score: 2601
+40 words played, total score: 5906
+60 words played, total score: 7297
+80 words played, total score: 8466
+100 words played, total score: 10513
+Final score: 11807
+29 words of length 3
+48 words of length 4
+21 words of length 5
+4 words of length 6
+4 words of length 7
+3 words of length 8
+3 words of length 9
+1 words of length 10
+1 words of length 11
+
+Enter the game number to play (between 0 and 4):
+-- game2.txt opened --
+
+Enter output frequency (number of words between each printing of the score):
+
+10 words played, total score: 541
+20 words played, total score: 991
+30 words played, total score: 3668
+40 words played, total score: 6280
+Final score: 6575
+15 words of length 3
+22 words of length 4
+8 words of length 5
+1 words of length 8
+2 words of length 45
+
+Enter the game number to play (between 0 and 4):
+-- game3.txt opened --
+
+Enter output frequency (number of words between each printing of the score):
+
+200 words played, total score: 15183
+400 words played, total score: 39531
+600 words played, total score: 59405
+800 words played, total score: 76513
+1000 words played, total score: 94997
+1200 words played, total score: 110505
+Final score: 110960
+374 words of length 3
+404 words of length 4
+166 words of length 5
+112 words of length 6
+88 words of length 7
+40 words of length 8
+17 words of length 9
+4 words of length 10
+1 words of length 12
+1 words of length 28
+
+Enter the game number to play (between 0 and 4):
+-- game4.txt opened --
+
+Enter output frequency (number of words between each printing of the score):
+
+25 words played, total score: 1679
+50 words played, total score: 3864
+75 words played, total score: 6728
+100 words played, total score: 10352
+125 words played, total score: 12474
+150 words played, total score: 13997
+175 words played, total score: 16683
+200 words played, total score: 19450
+225 words played, total score: 22150
+250 words played, total score: 24514
+Final score: 24733
+90 words of length 3
+73 words of length 4
+46 words of length 5
+11 words of length 6
+19 words of length 7
+12 words of length 8
+3 words of length 9

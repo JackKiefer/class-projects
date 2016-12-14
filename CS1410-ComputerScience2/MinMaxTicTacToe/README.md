@@ -1,0 +1,1 @@
+Given a base tic-tac-toe game program, a min-max algorithm was utilized to write an algorithm that plays the game perfectly every time. This was compared against an algorithm that selects moves at random and an algorithm that only plays the game defensively. A human player can also play against any of the algorithms.
