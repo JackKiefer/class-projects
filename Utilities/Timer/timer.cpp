@@ -1,22 +1,23 @@
+#include "timer.hpp"
 #include <chrono>
 #include <cmath>
-#include <string>
-#include <sstream>
-#include <vector>
 #include <iostream>
 #include <numeric>
-#include "timer.hpp"
+#include <sstream>
+#include <string>
+#include <vector>
 
 void Timer::push()
 {
   ++pushes;
-  if (pushes > CACHE_BUFF) times.push_back(toLong());
+  if (pushes > CACHE_BUFF)
+    times.push_back(toLong());
 }
 
 void Timer::reset()
 {
-  dur = std::chrono::duration<double, std::micro>::zero();
-  total = std::chrono::duration<double, std::micro>::zero();
+  dur = std::chrono::duration<double, std::milli>::zero();
+  total = std::chrono::duration<double, std::milli>::zero();
 }
 
 double Timer::getAverage()
@@ -29,14 +30,14 @@ double Timer::getAverage()
 std::vector<double> Timer::getSquareDifs(double avg)
 {
   std::vector<double> squareDifs;
-  for(auto && n : times)
+  for (auto &&n : times)
   {
     auto dif = static_cast<double>(n - avg);
     squareDifs.push_back(dif * dif);
   }
   return squareDifs;
 }
- 
+
 double Timer::getStdDev()
 {
   auto avg = getAverage();
@@ -49,28 +50,26 @@ double Timer::getStdDev()
 
 void Timer::start()
 {
-  startTime = std::chrono::high_resolution_clock::now();
+  startTime = std::chrono::steady_clock::now();
 }
 
 void Timer::end()
 {
-  endTime = std::chrono::high_resolution_clock::now();
+  endTime = std::chrono::steady_clock::now();
   dur = endTime - startTime;
 }
 
 std::string Timer::toString()
 {
   std::ostringstream oss;
-  oss << toLong() << " microseconds";
+  oss << toLong() << " milliseconds";
   return oss.str();
 }
 
 long Timer::toLong()
 {
-  if (!summed) total = dur;
-  us = std::chrono::duration_cast<std::chrono::microseconds>(total);
+  if (!summed)
+    total = dur;
+  us = std::chrono::duration_cast<std::chrono::milliseconds>(total);
   return us.count();
 }
-
-
-
