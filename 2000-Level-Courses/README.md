@@ -10,5 +10,3 @@
 │   └── WordLadder
 └── Event-Driven-&-GUIs
     └── ImageViewer
-
-10 directories

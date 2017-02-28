@@ -12,5 +12,3 @@
     ├── MinMaxTicTacToe
     ├── ReversePolishCalculator
     └── SortingAlgorithms
-
-12 directories
