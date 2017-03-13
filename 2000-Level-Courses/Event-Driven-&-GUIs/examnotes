@@ -1,0 +1,59 @@
+draw shapes and drag-n-drop before exam!
+
+dropdown list - combo box
+  used for control
+
+public class ComboBoxDemo extends Application {
+
+  @Override
+  public void start(Stage primaryStage) throws exception{
+    Pane pane = new Pane();
+    Scene scene = new Scene(pane);
+    primaryStage.setScene(scene);
+    primaryStage.show();
+  }
+}
+
+HBox toolPane = new HBox();
+StackPane textPane = new StackPane();
+textPane.setPrefSize(300);
+Text text = new Text("Message here");
+textPane.getChildren().add(text);
+
+ComboBox<Integer> numCombo = new ComboBox()'
+
+
+
+
+
+public static void main(String args[]) { // get this write lol
+
+}
+
+
+Review:
+
+C++ Similarities
+
+JDK vs JRE
+  your grandma probably codes
+
+javac lives in the JDK
+  it is the compiler
+
+5 steps to make a java:
+  1. Edit
+  2. Compile
+  3. Load
+  4. Verify
+  5. Iterperet
+
+Java compiles to "bytecode", ran by the JRE / JVM
+
+know how to compile from command line
+
+creating objects is expensive
+
+reading/writing from files
+
+java input dialogs

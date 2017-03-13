@@ -1,4 +1,4 @@
-## MolluscShell v2.0
+## MolluscShell v2.1
 
 Welcome to MolluscShell: a brand-new linux shell so-named due to its qualities of being snail-like and having limited usefulness.
 
@@ -15,6 +15,8 @@ MolluscShell also contains implementation of the following commands:
 
 
 ### Changelog
+* MolluscShell v2.1
+  * Added parsing for `~/` substitution 
 * MolluscShell v2.0
   * IO Redirection added
 * MolluscShell v1.1

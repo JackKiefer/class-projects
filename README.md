@@ -8,5 +8,7 @@
 │   └── Event-Driven-&-GUIs
 ├── 3000-Level-Courses
 │   └── OS-&-Concurrency
+├── MIT-OpenCourseWare
+│   └── Artificial-Intelligence
 └── Utilities
     └── Timer

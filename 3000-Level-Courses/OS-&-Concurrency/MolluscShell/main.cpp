@@ -57,12 +57,41 @@ char* const* toCharConst(const std::vector<std::string> & words)
   return args;
 }
 
+bool inHomeDir(std::string curDir, std::string homeDir)
+{
+  for (auto i = 0u; i < homeDir.size(); ++i)
+  {
+    if (curDir[i] != homeDir[i]) return false;
+  }
+
+  return true;
+}
+
 // Prints the colorful shell prompt
 void printPrompt(char* hostname)
 {
+  auto user = getenv("USER");
+  auto dir = get_current_dir_name();
+
+  std::string curDir(dir);
+  std::string userStr(user);
+  std::string homeDir = "/home/" + userStr;
+ 
+   
+  if (!inHomeDir(curDir, homeDir))  
+  { 
     std::cout << "\e[1m" << "\033[34m" 
-    << getenv("USER") << '@' << hostname << ':' << "\033[0m" 
-    << "\e[1m\033[33m" << get_current_dir_name() << "$ " << "\033[0m";
+    << user << '@' << hostname << ':' << "\033[0m" 
+    << "\e[1m\033[33m" << dir << "$ " << "\033[0m";
+  }
+  else 
+  {
+    std::string restOfDir(curDir.begin() + homeDir.size(), curDir.end());
+
+    std::cout << "\e[1m" << "\033[34m" 
+    << user << '@' << hostname << ':' << "\033[0m" 
+    << "\e[1m\033[33m" << "~" << restOfDir << "$ " << "\033[0m";
+  }
 }
 
 enum boolName { DO_FORK, SKIP_FORK };
